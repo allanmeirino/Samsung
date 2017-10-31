@@ -1,4 +1,4 @@
-## Step 1 - Getting the data
+### Step 1 - Getting the data
 
 The data tables were downloaded from the link provided in the project instructions website and unpacked in the "D: // Coursera / Samsung" path directory.
 
@@ -6,7 +6,7 @@ Once decompressed, the tables were appropriated through the "read.table" functio
 
 Finally, these two tables were merged through the "rbind" function into a single table named "merged_data", with the inclusion of a new " condition" column to identify whether a record is relative to training or testing.
 
-## Step 2 - Extrating relevant values
+### Step 2 - Extrating relevant values
 
 The "merged_data" table contains all records, with all variables of all subjects, activities and conditions observed.
 
@@ -15,3 +15,7 @@ From this, a data extraction was performed using the subset function, where only
 To identify which columns should be selected, the "grep" function was used.
 
 The result of the extraction was stored in an object called "extract".
+
+### Step 3 - Adding activities names
+
+In this step, using the "sub" function, the activity codes (numerals 1 to 6) were replaced by their respective descriptions ("walking", "sitting", etc.).
