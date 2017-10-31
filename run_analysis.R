@@ -77,6 +77,7 @@ names(extract) <- sub("Mag", "_magnitude", names(extract))
 
 melted_data <- melt(extract, id = c(names(extract)[1:3]), measure.vars = c(names(extract[4:69])))
 tidy_data <- dcast(melted_data, activity+subject ~ variable, mean)
+write.table(tidy_data, file = "tidy_data.txt", row.names = FALSE)
 
 ## tidy_data is the final data table, cleaned, organized and
 ## summarized by the means values.
