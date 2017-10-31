@@ -19,3 +19,7 @@ The result of the extraction was stored in an object called "extract".
 ### Step 3 - Adding activities names
 
 In this step, using the "sub" function, the activity codes (numerals 1 to 6) were replaced by their respective descriptions ("walking", "sitting", etc.).
+
+### Step 4 - Renaming labels
+
+The same "sub" function was used to adjust the column labels. This time, regular expressions were used to identify the abbreviations and replace them with more complete descriptions.
