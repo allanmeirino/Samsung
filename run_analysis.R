@@ -4,7 +4,7 @@
 
 ## Accessing and merging the data archives:
 ## All the data archives was previously unzip in the directory:
-## D:/Coursera/UCIDataset
+## D:/Coursera/Samsung
 
 features <- read.table("D://Coursera/Samsung/features.txt")
 labels <- features$V2
