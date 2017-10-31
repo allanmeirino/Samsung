@@ -23,3 +23,13 @@ In this step, using the "sub" function, the activity codes (numerals 1 to 6) wer
 ### Step 4 - Renaming labels
 
 The same "sub" function was used to adjust the column labels. This time, regular expressions were used to identify the abbreviations and replace them with more complete descriptions.
+
+### Step 5 - Creating the tidy data set
+
+The "melt" function and the "dcast" function were used to group the data by activity and subject and to summarize the data considering the average values of the variables for each subgroup considered.
+The tidy table of data is thus displayed.
+
+### Final considerations
+
+To use the "run_analysis.R" script you must have the "dplyr" and "data.table" packages installed.
+The script was not properly optimized because no need was identified for this, since in the first analysis it will only be used once. In this way, it is considered that the script fulfills its function in a reasonable way.
